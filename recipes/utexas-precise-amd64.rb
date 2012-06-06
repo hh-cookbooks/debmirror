@@ -14,3 +14,11 @@ debmirror '/share/ubuntu-amd64' do
   source false
   progress true
 end
+
+include_recipe 'apache2'
+
+apache2_web_app "local_ubuntu_mirror" do
+  server_name node['hostname']
+  server_aliases [node['fqdn'], "localhost"]
+  docroot "/share/ubuntu-amd64"
+end
