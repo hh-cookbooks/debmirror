@@ -3,11 +3,27 @@ Description
 
 Installes debmirror package and provides the debmirror lwrp.
 
+Roadmap
+-------
+
+Ability to schedule updates of mirror via cron etc.
+
 Requirements
 ============
 
+## Platform
+
+* Ubuntu 12.04
+
 Tested on Ubuntu 12.04, but it would be desireable to get this on more platforms.
 Debmirror basically one big perl script with a few dependencies.
+
+Recipes
+=======
+
+utexas-precise-amd64
+
+creates an amd64 precise mirror in /share/ubuntu-amd64 8)
 
 Attributes
 ==========
