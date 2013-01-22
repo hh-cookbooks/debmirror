@@ -10,3 +10,5 @@
 }.each do |k,v| 
   default['debmirror'][k]=v
 end
+
+default['debmirror']['root']='/srv/mirror'
